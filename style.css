@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box; }
+
+.clearfix {
+  clear: both; }
+
+.page {
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 50px;
+  position: relative; }
+
+img {
+  max-width: 100%; }
+
+button {
+  text-transform: uppercase; }
+  button.button-blue {
+    color: white;
+    background-color: #66b7ff; }
+  button.button-white {
+    color: black;
+    background-color: white; }
+  button.button-rounded {
+    border-radius: 10px; }
+
+a:link, a:hover, a:visited {
+  text-decoration: none;
+  color: black; }
+
+a.bold {
+  font-weight: bold; }
+a.bg-transition {
+  transition: background-color linear 0.5s;
+  padding: 5px; }
+a.bg-transition:hover {
+  background-color: rgba(0, 0, 0, 0.15); }
+a.link-underline:hover {
+  text-decoration: underline; }
+
+.page-header {
+  background-color: white;
+  border: solid rgba(0, 0, 0, 0.25) 1px;
+  border-top: none;
+  font-size: 0.8em;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 85%;
+  padding: 10px 5px; }
+  .page-header .page-header-links {
+    width: 30%; }
+  .page-header .page-header-title {
+    width: 40%;
+    text-align: center; }
+  .page-header .page-header-settings {
+    width: 30%;
+    text-align: right; }
+
+.page-header-list {
+  list-style-type: none;
+  padding: 0; }
+  .page-header-list li {
+    display: inline;
+    margin-right: 10px; }
+    .page-header-list li:last-of-type {
+      margin-right: 0; }
+    .page-header-list li button {
+      border: solid 1px grey;
+      padding: 8px; }
+
+.page-related-news {
+  width: 100%;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 3px 3px black; }
+  .page-related-news .page-related-news-article {
+    float: left;
+    width: 16.6666%;
+    border-left: solid 1px rgba(0, 0, 0, 0.25);
+    padding: 5px 5px 0 5px; }
+    .page-related-news .page-related-news-article:last-of-type {
+      border-right: solid 1px rgba(0, 0, 0, 0.25); }
+    .page-related-news .page-related-news-article .page-related-news-article-image {
+      float: left;
+      width: 30%;
+      margin-right: 5px; }
+    .page-related-news .page-related-news-article .page-related-news-article-text {
+      float: right;
+      width: calc(70% - 5px);
+      font-size: 0.8em;
+      margin-top: 18px; }
+      .page-related-news .page-related-news-article .page-related-news-article-text:hover {
+        text-decoration: underline; }
+
+.page-article-box {
+  width: 100%;
+  padding-top: 25px;
+  border-left: solid rgba(0, 0, 0, 0.4) 1px;
+  border-right: solid rgba(0, 0, 0, 0.4) 1px; }
+
+.page-article-content {
+  width: 60%;
+  margin: 0 auto; }
+  .page-article-content .page-article-category-and-comments {
+    width: 100%;
+    font-size: 0.8em; }
+    .page-article-content .page-article-category-and-comments .page-article-category {
+      float: left;
+      font-weight: bold; }
+    .page-article-content .page-article-category-and-comments .page-article-comments-amount {
+      float: right; }
+  .page-article-content .page-article-title {
+    font-style: italic;
+    font-family: "nyt-cheltenham",georgia,"times new roman",times,serif; }
+  .page-article-content hr {
+    border-color: rgba(0, 0, 0, 0.4);
+    border-bottom: none; }
+  .page-article-content .page-article-author-and-date {
+    font-size: 0.7em; }
+    .page-article-content .page-article-author-and-date .page-article-author {
+      margin-right: 10px; }
+  .page-article-content .page-article-main-photo {
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: dimgrey; }
+    .page-article-content .page-article-main-photo .page-article-main-photo-description {
+      width: 60%; }
+    .page-article-content .page-article-main-photo .page-article-main-photo-description-author {
+      font-size: 0.9em;
+      margin-top: 3px;
+      color: grey; }
+  .page-article-content .page-article-text-box {
+    margin-top: 30px;
+    position: relative; }
+    .page-article-content .page-article-text-box .page-article-social-links {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 15%; }
+      .page-article-content .page-article-text-box .page-article-social-links ul {
+        padding: 0;
+        margin: 0; }
+      .page-article-content .page-article-text-box .page-article-social-links li {
+        list-style-type: none;
+        padding: 10px;
+        border-bottom: solid 1px rgba(0, 0, 0, 0.25);
+        font-size: 0.9em; }
+        .page-article-content .page-article-text-box .page-article-social-links li:last-of-type {
+          border-bottom: none; }
+    .page-article-content .page-article-text-box .page-article-text {
+      width: 60%;
+      margin-left: 20%;
+      padding-top: 15px; }

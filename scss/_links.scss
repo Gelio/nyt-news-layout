@@ -1,0 +1,24 @@
+a:link, a:hover, a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+
+a {
+  &.bold {
+    font-weight: bold;
+  }
+
+  &.bg-transition {
+    transition: background-color linear 0.5s;
+    padding: 5px;
+  }
+
+  &.bg-transition:hover {
+    background-color: rgba(0, 0, 0, 0.15);
+  }
+
+  &.link-underline:hover {
+    text-decoration: underline;
+  }
+}

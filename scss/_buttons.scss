@@ -1,0 +1,17 @@
+button {
+  text-transform: uppercase;
+
+  &.button-blue {
+    color: white;
+    background-color: #66b7ff;
+  }
+
+  &.button-white {
+    color: black;
+    background-color: white;
+  }
+
+  &.button-rounded {
+    border-radius: 10px;
+  }
+}

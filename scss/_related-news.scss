@@ -1,0 +1,33 @@
+.page-related-news {
+  width: 100%;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 3px 3px black;
+
+  .page-related-news-article {
+    float: left;
+    width: 16.6666%;
+    border-left: solid 1px rgba(0, 0, 0, 0.25);
+    padding: 5px 5px 0 5px;
+
+    &:last-of-type {
+      border-right: solid 1px rgba(0, 0, 0, 0.25);
+    }
+
+    .page-related-news-article-image {
+      float: left;
+      width: 30%;
+      margin-right: 5px;
+    }
+
+    .page-related-news-article-text {
+      float: right;
+      width: calc(70% - 5px);
+      font-size: 0.8em;
+      margin-top: 18px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
