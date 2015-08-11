@@ -37,6 +37,18 @@ a.bg-transition:hover {
   background-color: rgba(0, 0, 0, 0.15); }
 a.link-underline:hover {
   text-decoration: underline; }
+a.blue {
+  color: #326891; }
+a.link-base-underline {
+  text-decoration: underline; }
+
+.page-article-text a {
+  color: #326891;
+  text-decoration: underline; }
+
+.article-print-info a {
+  color: inherit;
+  text-decoration: none; }
 
 .page-header {
   background-color: white;
@@ -46,6 +58,7 @@ a.link-underline:hover {
   height: 50px;
   position: fixed;
   top: 0;
+  z-index: 999;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -76,7 +89,7 @@ a.link-underline:hover {
 .page-related-news {
   width: 100%;
   border-bottom: solid 1px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 3px 3px black; }
+  box-shadow: 0 5px 3px -3px black; }
   .page-related-news .page-related-news-article {
     float: left;
     width: 16.6666%;
@@ -100,7 +113,8 @@ a.link-underline:hover {
   width: 100%;
   padding-top: 25px;
   border-left: solid rgba(0, 0, 0, 0.4) 1px;
-  border-right: solid rgba(0, 0, 0, 0.4) 1px; }
+  border-right: solid rgba(0, 0, 0, 0.4) 1px;
+  overflow: auto; }
 
 .page-article-content {
   width: 60%;
@@ -155,3 +169,109 @@ a.link-underline:hover {
       width: 60%;
       margin-left: 20%;
       padding-top: 15px; }
+      .page-article-content .page-article-text-box .page-article-text p {
+        font-family: georgia,"times new roman",times,serif;
+        line-height: 1.4375rem; }
+
+.page-article-grid {
+  width: 100%; }
+  .page-article-grid .grid-description {
+    color: grey; }
+  .page-article-grid .grid-items {
+    width: 100%; }
+  .page-article-grid .grid-item {
+    width: 23%;
+    margin: 5px 1%;
+    float: left;
+    font-size: 0.8em; }
+    .page-article-grid .grid-item h4.grid-item-title {
+      margin-right: 3px;
+      display: inline; }
+    .page-article-grid .grid-item .grid-item-description {
+      display: inline; }
+  .page-article-grid .grid-author {
+    display: block;
+    color: grey;
+    font-size: 0.9em; }
+
+.page-article-video {
+  width: 64%;
+  margin-left: 18%;
+  padding-top: 15px;
+  overflow: auto; }
+  .page-article-video iframe {
+    width: 100%; }
+  .page-article-video .video-description {
+    font-size: 0.8em;
+    color: grey; }
+
+.article-photo .article-photo-description {
+  color: grey;
+  font-size: 0.8em; }
+  .article-photo .article-photo-description small {
+    display: block; }
+
+.article-print-info {
+  font-size: 0.7em;
+  color: grey; }
+
+.page-bottom-grid {
+  width: 100%;
+  overflow: auto;
+  margin-top: 35px; }
+  .page-bottom-grid .bottom-grid-other-articles {
+    float: left;
+    width: 65%;
+    border-top: solid 1px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px; }
+    .page-bottom-grid .bottom-grid-other-articles .bottom-grid-other-title {
+      display: block;
+      float: left; }
+      .page-bottom-grid .bottom-grid-other-articles .bottom-grid-other-title h3 {
+        margin: 5px 0; }
+    .page-bottom-grid .bottom-grid-other-articles .bottom-grid-other-link {
+      display: block;
+      float: right;
+      margin-top: 3px;
+      font-size: 0.8em; }
+  .page-bottom-grid .bottom-grid-most-emailed {
+    float: right;
+    width: 30%;
+    border-top: solid 1px rgba(0, 0, 0, 0.25); }
+    .page-bottom-grid .bottom-grid-most-emailed h6 {
+      margin: 5px 0; }
+    .page-bottom-grid .bottom-grid-most-emailed ol {
+      padding: 0;
+      list-style-position: inside;
+      counter-reset: emailed;
+      display: table; }
+      .page-bottom-grid .bottom-grid-most-emailed ol li {
+        display: table-row;
+        counter-increment: emailed; }
+        .page-bottom-grid .bottom-grid-most-emailed ol li::before {
+          display: table-cell;
+          content: counter(emailed) ". ";
+          text-align: right;
+          vertical-align: middle; }
+        .page-bottom-grid .bottom-grid-most-emailed ol li div {
+          border-bottom: solid 1px rgba(0, 0, 0, 0.25);
+          padding: 5px 0 5px 10px;
+          width: 100%; }
+    .page-bottom-grid .bottom-grid-most-emailed .view-more {
+      font-size: 0.8em; }
+
+.bottom-grid-article-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%; }
+  .bottom-grid-article-items .bottom-grid-article-item {
+    width: 30%; }
+
+.grid-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap; }
+  .grid-columns .grid-column ul {
+    list-style: none;
+    padding: 0; }
